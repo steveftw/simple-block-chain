@@ -9,11 +9,11 @@ public class Block {
 
     private long index;
     private Date timestamp;
-    private String data;
+    private BlockData data;
     private String previousBlocksHash;
     private String blocksHash;
 
-    public Block(long index, Date timestamp, String data, String previousBlocksHash) {
+    public Block(long index, Date timestamp, BlockData data, String previousBlocksHash) {
         this.index = index;
         this.timestamp = timestamp;
         this.data = data;
@@ -35,7 +35,7 @@ public class Block {
         return timestamp;
     }
 
-    public String getData() {
+    public BlockData getData() {
         return data;
     }
 
